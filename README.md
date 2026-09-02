@@ -114,9 +114,6 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
              ┌─────────────┴─────────────┐
              │                           │
              ▼                           ▼
- 
-
-   
    ┌──────────────────┐       ┌──────────────────┐
    │ INDICATOR NODE   │       │ REVERSE ALERT    │
    │     LPC2129      │       │      NODE        │
