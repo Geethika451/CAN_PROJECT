@@ -141,11 +141,23 @@ The Main Node acts as the central controller.
 
 
 1.Reads engine temperature using the DS18B20 temperature sensor
+
+
 2.Displays temperature on LCD
+
+
 3.Detects external switch interrupts
+
+
 4.Sends indicator control commands through CAN
+
+
 5.Selects forward/reverse operating mode
+
+
 6.Receives reverse-alert information through CAN
+
+
 7.Activates an alert using LED/buzzer when required
 
 **2. Indicator Node**
