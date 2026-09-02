@@ -115,7 +115,7 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
              │                           │
              ▼                           ▼
  
-   
+
    
    ┌──────────────────┐       ┌──────────────────┐
    │ INDICATOR NODE   │       │ REVERSE ALERT    │
