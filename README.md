@@ -64,6 +64,17 @@ CAN is used for communication between the Main Node, Indicator Node, and Reverse
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 Main Node Indicator Reverse Node Alert Node
 
 The Main Node communicates indicator commands to the Indicator Node.
