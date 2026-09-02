@@ -218,21 +218,34 @@ HC-SR05 Distance > Limit ↓ Logic 0 ↓ CAN Message ↓ Main Node ↓ Safety Al
 This system can be used as a prototype for:
 
 1.Automotive safety systems
+
 2.Vehicle indicator control
+
 3.Reverse parking assistance
+
 4.Engine temperature monitoring
+
 5.CAN-based automotive networks
+
 6.Vehicle monitoring systems
 
 **📌 Future Enhancements**
 Possible future improvements include:
 
 1.Add vehicle speed monitoring
+
 2.Add battery voltage monitoring
+
 3.Add GPS-based vehicle tracking
-4.Add GSM/IoT connectivity 5.Store sensor data for analysis
+
+4.Add GSM/IoT connectivity
+
+5.Store sensor data for analysis
+
 5.Add CAN error monitoring
+
 6.Add more automotive sensor nodes
+
 7.Add real-time data logging
 
 
