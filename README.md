@@ -1,5 +1,11 @@
 🚗**CAN-Based Vehicle Safety & Monitoring System**
+
+
+
 📌 **Project Overview**
+
+
+
 The **CAN-Based Vehicle Safety & Monitoring System** is an automotive embedded system designed using the Controller Area Network (CAN) protocol.
 
 The system uses multiple LPC2129-based nodes to monitor vehicle parameters and provide safety-related alerts.
@@ -7,9 +13,15 @@ The system uses multiple LPC2129-based nodes to monitor vehicle parameters and p
 The main node monitors the engine temperature, controls vehicle indicators, and processes reverse sensor information. Communication between the nodes is performed using the CAN protocol.
 
 **🎯 Aim**
+
+
+
 To design and develop an automotive safety and monitoring system using the CAN protocol, where a central/main node monitors engine temperature, controls vehicle indicators, and processes reverse sensor data to provide real-time safety alerts through coordinated communication with multiple nodes.
 
 **✨ Features**
+
+
+
 1.Engine temperature monitoring
 2.Vehicle indicator control
 3.Reverse obstacle detection
@@ -21,6 +33,9 @@ To design and develop an automotive safety and monitoring system using the CAN p
 9.LED/buzzer-based safety indication
 
 **🔧 Hardware Requirements**
+
+
+
 1.LPC2129 Microcontroller
 2.CAN Transceiver – MCP2551
 3.LEDs
@@ -31,9 +46,15 @@ To design and develop an automotive safety and monitoring system using the CAN p
 8.USB-to-UART Converter
 
 **💻 Software Requirements**
+
+
+
 Embedded C, Keil C Compiler, Flash Magic.
 
 **📡 CAN Communication**
+
+
+
 CAN is used for communication between the Main Node, Indicator Node, and Reverse Alert Node.
          CAN BUS
             │
@@ -48,11 +69,16 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
 
 **CAN ID's for Nodes**
 
+
+
 **MAIN_ID 0x100**
 **IND_ID 0x200**
 **MODE_ID(Reverse) 0x300**
 
 **🧩 Block Diagram**
+
+
+
                 ┌──────────────────────┐
                 │      MAIN NODE       │
                 │       LPC2129        │
@@ -76,6 +102,9 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
    │ LED Indicators   │       │ HC-SR05 Sensor   │
    └──────────────────┘       └──────────────────┘
 **🏗️ System Architecture**
+
+
+
 The project consists of three major nodes:
 
 **1. Main Node**
