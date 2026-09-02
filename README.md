@@ -61,6 +61,9 @@ CAN is used for communication between the Main Node, Indicator Node, and Reverse
    ┌────────┼────────┐
    │        │        │
    ▼        ▼        ▼
+
+
+
 Main Node Indicator Reverse Node Alert Node
 
 The Main Node communicates indicator commands to the Indicator Node.
@@ -94,6 +97,9 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
              ┌─────────────┴─────────────┐
              │                           │
              ▼                           ▼
+ 
+   
+   
    ┌──────────────────┐       ┌──────────────────┐
    │ INDICATOR NODE   │       │ REVERSE ALERT    │
    │     LPC2129      │       │      NODE        │
@@ -156,34 +162,54 @@ HC-SR05 Distance > Limit ↓ Logic 0 ↓ CAN Message ↓ Main Node ↓ Safety Al
                 START
                   │
                   ▼
+         
+          
           Initialize LPC2129
                   │
                   ▼
+         
+          
           Initialize CAN/LCD
                   │
                   ▼
+         
+         
          Read Engine Temperature
                   │
                   ▼
+             
+             
              Display LCD
                   │
                   ▼
+         
+          
           Check Operating Mode
              /          \
             /            \
+     
+      
       FORWARD            REVERSE
          │                  │
          ▼                  ▼
+  
+  
   Check Switches       Read HC-SR05
          │                  │
          ▼                  ▼
+  
+  
   CAN Indicator         Compare Distance
     Command                 │
          │                  ▼
          ▼             Send CAN Data
+  
+   
    Indicator Node           │
          │                  ▼
          ▼              Main Node
+ 
+ 
  LED Indicator            │
                             ▼
                        Safety Alert
