@@ -203,22 +203,42 @@ The Reverse Alert Node continuously monitors the distance using the HC-SR05 ultr
 
 
 Initially, the vehicle operates in Forward Mode.
+
 The Main Node:
+
+
 1.Reads engine temperature.
+
+
 2.Displays the temperature on LCD.
+
+
 3.Monitors external switches.
+
+
 4.Generates an interrupt when an indicator switch is pressed.
+
+
 5.Sends the appropriate indicator command through CAN.
+
+
 6.The Indicator Node receives the CAN message.
+
+
 7.The corresponding indicator LED is activated.
+
 
 **Reverse Mode**
 
 
 
 When the mode switch is pressed, the system changes from Forward Mode to Reverse Mode.
-The Reverse Alert Node continuously reads the HC-SR05 ultrasonic sensor.
-If an obstacle is detected within the configured limit:
+
+
+1.The Reverse Alert Node continuously reads the HC-SR05 ultrasonic sensor.
+
+
+2.If an obstacle is detected within the configured limit:
 HC-SR05 Distance > Limit ↓ Logic 0 ↓ CAN Message ↓ Main Node ↓ Safety Alert OFF
 
 **System Flow**
