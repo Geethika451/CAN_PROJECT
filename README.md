@@ -75,7 +75,13 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
 
 
 **MAIN_ID 0x100**
+
+
+
 **IND_ID 0x200**
+
+
+
 **MODE_ID(Reverse) 0x300**
 
 **🧩 Block Diagram**
@@ -107,6 +113,9 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
    │ CAN Receiver     │       │                  │
    │ LED Indicators   │       │ HC-SR05 Sensor   │
    └──────────────────┘       └──────────────────┘
+
+
+   
 **🏗️ System Architecture**
 
 
@@ -215,6 +224,9 @@ HC-SR05 Distance > Limit ↓ Logic 0 ↓ CAN Message ↓ Main Node ↓ Safety Al
                        Safety Alert
 
 **Applications**
+
+
+
 This system can be used as a prototype for:
 
 1.Automotive safety systems
@@ -230,6 +242,9 @@ This system can be used as a prototype for:
 6.Vehicle monitoring systems
 
 **📌 Future Enhancements**
+
+
+
 Possible future improvements include:
 
 1.Add vehicle speed monitoring
