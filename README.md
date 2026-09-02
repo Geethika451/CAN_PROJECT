@@ -149,6 +149,9 @@ The Main Node acts as the central controller.
 
 
 The Indicator Node continuously waits for CAN data from the Main Node.
+
+
+
 **Functions:**
 
 
@@ -162,6 +165,9 @@ The Indicator Node continuously waits for CAN data from the Main Node.
 
 
 The Reverse Alert Node continuously monitors the distance using the HC-SR05 ultrasonic sensor.
+
+
+
 **Functions:**
 
 
