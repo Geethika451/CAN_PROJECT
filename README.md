@@ -160,8 +160,14 @@ The Indicator Node continuously waits for CAN data from the Main Node.
 
 
 1.Receives indicator control information through CAN
+
+
 2.Processes the received CAN data
+
+
 3.Controls left/right indicator LEDs according to the received command
+
+
 
 **3. Reverse Alert Node**
 
@@ -176,9 +182,19 @@ The Reverse Alert Node continuously monitors the distance using the HC-SR05 ultr
 
 
 1.Measures distance from an obstacle
+
+
+
 2.Compares the measured distance with a predefined limit
+
+
+
 3.Sends Logic 1 to the Main Node when the distance is below the limit
+
+
 4.Sends Logic 0 when the distance is above the limit
+
+
 
 **🔄 Working Principle**
 
