@@ -123,8 +123,12 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
 The project consists of three major nodes:
 
 **1. Main Node**
+
+
 The Main Node acts as the central controller.
 **Functions:**
+
+
 1.Reads engine temperature using the DS18B20 temperature sensor
 2.Displays temperature on LCD
 3.Detects external switch interrupts
@@ -134,15 +138,26 @@ The Main Node acts as the central controller.
 7.Activates an alert using LED/buzzer when required
 
 **2. Indicator Node**
+
+
 The Indicator Node continuously waits for CAN data from the Main Node.
 **Functions:**
+
+
+
 1.Receives indicator control information through CAN
 2.Processes the received CAN data
 3.Controls left/right indicator LEDs according to the received command
 
 **3. Reverse Alert Node**
+
+
+
 The Reverse Alert Node continuously monitors the distance using the HC-SR05 ultrasonic sensor.
 **Functions:**
+
+
+
 1.Measures distance from an obstacle
 2.Compares the measured distance with a predefined limit
 3.Sends Logic 1 to the Main Node when the distance is below the limit
@@ -151,6 +166,9 @@ The Reverse Alert Node continuously monitors the distance using the HC-SR05 ultr
 **🔄 Working Principle**
 
 **Forward Mode**
+
+
+
 Initially, the vehicle operates in Forward Mode.
 The Main Node:
 1.Reads engine temperature.
@@ -162,6 +180,9 @@ The Main Node:
 7.The corresponding indicator LED is activated.
 
 **Reverse Mode**
+
+
+
 When the mode switch is pressed, the system changes from Forward Mode to Reverse Mode.
 The Reverse Alert Node continuously reads the HC-SR05 ultrasonic sensor.
 If an obstacle is detected within the configured limit:
@@ -171,55 +192,35 @@ HC-SR05 Distance > Limit ↓ Logic 0 ↓ CAN Message ↓ Main Node ↓ Safety Al
                 START
                   │
                   ▼
-         
-          
           Initialize LPC2129
                   │
                   ▼
-         
-          
-          Initialize CAN/LCD
+         Initialize CAN/LCD
                   │
                   ▼
-         
-         
-         Read Engine Temperature
+          Read Engine Temperature
                   │
                   ▼
-             
-             
-             Display LCD
+              Display LCD
                   │
                   ▼
-         
-          
-          Check Operating Mode
+        Check Operating Mode
              /          \
             /            \
-     
-      
-      FORWARD            REVERSE
+     FORWARD            REVERSE
          │                  │
          ▼                  ▼
-  
-  
-  Check Switches       Read HC-SR05
+ Check Switches       Read HC-SR05
          │                  │
          ▼                  ▼
-  
-  
-  CAN Indicator         Compare Distance
+ CAN Indicator         Compare Distance
     Command                 │
          │                  ▼
          ▼             Send CAN Data
-  
-   
-   Indicator Node           │
+  Indicator Node            │
          │                  ▼
          ▼              Main Node
- 
- 
- LED Indicator            │
+LED Indicator               │
                             ▼
                        Safety Alert
 
