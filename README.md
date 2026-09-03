@@ -138,36 +138,25 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
                
                 ┌──────────────────────┐
                 
-                
                 │      MAIN NODE       │
-                
                 
                 │       LPC2129        │
                 
-                
                 │                      │
-                
                 
                 │  DS18B20             │
                 
-                
                 │  LCD                 │
-                
                 
                 │  Switches            │
                 
-                
                 │  Mode Control        │
-                
                 
                 └──────────┬───────────┘
                           
-                           
                            │
                            
-                           
                            │ CAN
-                           
                            
                            │
              ┌─────────────┴─────────────┐
