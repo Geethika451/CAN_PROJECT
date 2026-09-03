@@ -23,13 +23,29 @@ To design and develop an automotive safety and monitoring system using the CAN p
 
 
 1.Engine temperature monitoring
+
+
 2.Vehicle indicator control
+
+
 3.Reverse obstacle detection
+
+
 4.CAN-based communication between multiple nodes
+
+
 5.LCD-based information display
+
+
 6.External interrupt-based indicator control
+
+
 7.Forward and reverse operating modes
+
+
 8.Reverse safety alert using ultrasonic sensor
+
+
 9.LED/buzzer-based safety indication
 
 **🔧 Hardware Requirements**
@@ -37,12 +53,26 @@ To design and develop an automotive safety and monitoring system using the CAN p
 
 
 1.LPC2129 Microcontroller
+
+
 2.CAN Transceiver – MCP2551
+
+
 3.LEDs
+
+
 4.LCD
+
+
 5.HC-SR05 Ultrasonic Sensor
+
+
 6.Switches
+
+
 7.DS18B20 Temperature Sensor
+
+
 8.USB-to-UART Converter
 
 **💻 Software Requirements**
