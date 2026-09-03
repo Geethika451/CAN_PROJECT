@@ -135,57 +135,32 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
 
 
 
-               
                 ┌──────────────────────┐
-                
                 │      MAIN NODE       │
-                
                 │       LPC2129        │
-                
                 │                      │
-                
                 │  DS18B20             │
-                
                 │  LCD                 │
-                
                 │  Switches            │
-                
                 │  Mode Control        │
-                
                 └──────────┬───────────┘
-                          
                            │
-                           
                            │ CAN
-                           
                            │
              ┌─────────────┴─────────────┐
-            
-             
              │                           │
-            
-             
              ▼                           ▼
-   
-   
    ┌──────────────────┐       ┌──────────────────┐
-  
    │ INDICATOR NODE   │       │ REVERSE ALERT    │
-   
-   
    │     LPC2129      │       │      NODE        │
-   
-   
    │                  │       │     LPC2129      │
-   
-   
    │ CAN Receiver     │       │                  │
-   
-   
    │ LED Indicators   │       │ HC-SR05 Sensor   │
-   
-   
    └──────────────────┘       └──────────────────┘
+
+
+               
+               
 
 
    
