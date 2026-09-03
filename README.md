@@ -1,4 +1,4 @@
-                                     🚗**CAN-BASED VEHICLE SAFETY & MONITORING SYSTEM**
+🚗**CAN-BASED VEHICLE SAFETY & MONITORING SYSTEM**
 
 
 
