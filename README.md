@@ -89,7 +89,15 @@ CAN is used for communication between the Main Node, Indicator Node, and Reverse
          CAN BUS
             │
    ┌────────┼────────┐
-   │        │        │
+  
+   
+   │        
+   
+   │        │
+   
+   
+   
+   
    ▼        ▼        ▼
 
 
